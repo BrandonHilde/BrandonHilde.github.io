@@ -1,0 +1,65 @@
+body
+{
+	margin:0px;
+	padding:0px;
+	background-color:#CCCCCC;
+}
+.top
+{
+	height:70px;
+	width:100%;
+	background-color:#AAAAAA;
+}
+.logo
+{
+	float:left;
+	margin-left: 40px;
+	height:100%;
+}
+.mid
+{
+	height:600px;
+	width:100%;
+	background-color:#EEEEEE;
+}
+.cont
+{
+	height: 400px;
+	margin-top:100px;
+	background-color:#FFFFFF;
+}
+.square
+{
+	width:33.33%;
+	height:100%;
+	display:inline-block;
+	background-color:#AAAAFF;
+}
+.one
+{
+	float:left;
+}
+.two
+{
+	margin-right:auto;
+	margin-left: auto;
+}
+.three
+{
+	float:right
+}
+.inner{
+	width:100%;
+	height:auto;
+}
+
+@media screen and (max-width:1200px)
+{
+	.square
+	{
+		width:100%;
+		height:100%;
+		display:inline-block;
+		background-color:#AAAAFF;
+	}
+}
