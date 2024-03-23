@@ -2,13 +2,12 @@ body
 {
 	margin:0px;
 	padding:0px;
-	background-color:#CCCCCC;
+	background-image: url('clothDark.jpg');
 }
 .top
 {
 	height:70px;
 	width:100%;
-	background-color:#AAAAAA;
 }
 .logo
 {
@@ -20,20 +19,17 @@ body
 {
 	height:600px;
 	width:100%;
-	background-color:#EEEEEE;
 }
 .cont
 {
 	height: 400px;
 	margin-top:100px;
-	background-color:#FFFFFF;
 }
 .square
 {
 	width:33.33%;
 	height:100%;
 	display:inline-block;
-	background-color:#AAAAFF;
 }
 .one
 {
@@ -51,6 +47,19 @@ body
 .inner{
 	width:100%;
 	height:auto;
+}
+
+.fullBox {
+	max-width: 800px;
+	width: 100vw;
+	border: 2px solid black;
+	box-shadow: 0px 5px 16px black;
+	border-radius: 12px;
+	min-height: 300px;
+	background-image: url('cloth.jpg');
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
 }
 
 @media screen and (max-width:1200px)
