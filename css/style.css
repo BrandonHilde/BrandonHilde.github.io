@@ -24,7 +24,7 @@ body
 {
 	height: 150px;
     width: 100%;
-    border-bottom: 2px solid black;
+    border-bottom: 4px solid black;
 }
 .logo
 {
@@ -140,7 +140,7 @@ body
 	{
 		height: 24vw;
 		width: 100%;
-		border-bottom: 2px solid black;
+		border-bottom: 4px solid black;
 	}
 	.fullBox {
 		max-width: 100vw;
@@ -150,6 +150,7 @@ body
 		box-shadow: 0px 5px 16px black;
 		border-radius: 0px;
 		min-height: 300px;
+		background-size: 72vw;
 		background-image: url('../img/cloth.jpg');
 		margin-left: auto;
 		margin-right: auto;
@@ -161,7 +162,7 @@ body
 		height: 20vw;
 		width: 20vw;
 		margin: 10px;
-		border: 2px solid wheat;/*#f5ab6e;*/
+		border: 3px solid wheat;/*#f5ab6e;*/
 		background-size: contain;
 		background-image: url('../img/profile.jpg');
 		background-repeat: no-repeat;
