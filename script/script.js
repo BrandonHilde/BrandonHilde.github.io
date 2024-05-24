@@ -21,3 +21,12 @@ function HideContact()
     contact.style.display = "none";
     
 }
+
+function CopyEmail()
+{
+    navigator.clipboard.writeText('brandon.hilde@icloud.com');
+
+    var email = document.getElementById("emailvalue");
+
+    email.innerHTML = "Copied Email!";
+}
