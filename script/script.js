@@ -8,6 +8,7 @@ function ShowContact()
     defpage.style.display = "none";
     contact.style.display = "block";
 
+    //broken up to prevent webscraping of the email
     email.innerHTML = "brandon.hilde";
     email.innerHTML += "@icloud.com";
 }
@@ -24,7 +25,8 @@ function HideContact()
 
 function CopyEmail()
 {
-    navigator.clipboard.writeText('brandon.hilde@icloud.com');
+    //broken up to prevent webscraping of the email
+    navigator.clipboard.writeText('brandon.hilde'+'@icloud.com');
 
     var email = document.getElementById("emailvalue");
 
