@@ -58,6 +58,29 @@ body
     display: inline-block;
     font-family: bree;
 }
+
+.link
+{
+	padding: 1vw 3vw;
+	text-align: center;
+	background-color: black;
+	border: 2px solid wheat;
+	border-radius: 1.2vw;
+	margin: 1vw;
+	margin-bottom: 1vw;
+	min-width: 30vw;
+	text-decoration: none;
+	color: wheat;
+}
+
+.link:hover
+{
+	cursor: pointer;
+	background-color: #151515;
+	color: rgb(255, 211, 129);
+	/*background-image: url('../img/clothDark.jpg');*/
+}
+
 .mid
 {
 	height:600px;
