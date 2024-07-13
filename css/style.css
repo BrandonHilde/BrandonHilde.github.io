@@ -12,13 +12,20 @@ body
 .mail
 {
 	float: right;
-    font-family: 'bree';
     padding: 14px;
     background-color: black;
     color: wheat;
     cursor: pointer;
-    font-size: 17px;
-    border-bottom-left-radius: 10px;
+	font-family: 'bree';
+    font-size: 16px;
+    border-bottom-left-radius: 1vw;
+	border-top-right-radius: 0.72vw;
+}
+.mail:hover
+{
+   /* background-color: #1d1d1d;*/
+    color:  rgb(255, 211, 129);
+    cursor: pointer;
 }
 #emailvalue
 {
@@ -58,25 +65,49 @@ body
     display: inline-block;
     font-family: bree;
 }
+.inner{
+	margin: 12px;
+	border: 2px dashed black;
+	background-color: #ffa6002e;
+	border-radius: 1vw;
+	height: max-content;
+	padding: 1.2vw;
+}
+
+.linkSpace 
+{
+	margin-top: 12px;
+}
+.linkHead
+{
+	font-family: 'bree';
+    font-size: 18px;
+	border-bottom: 2px solid black;
+}
+
+.linkHead:hover
+{
+
+}
 
 .link
 {
-	padding: 1vw 3vw;
-	text-align: center;
-	background-color: black;
-	border: 2px solid wheat;
-	border-radius: 1.2vw;
-	margin: 1vw;
-	margin-bottom: 1vw;
-	min-width: 30vw;
-	text-decoration: none;
-	color: wheat;
+	font-family: 'bree';
+    font-size: 15px;
+	padding: 3px 14px 6px 14px;
+    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+    margin: 1vw;
+    margin-bottom: 1vw;
+    min-width: 30vw;
+    text-decoration: none;
+    color: wheat;
 }
 
 .link:hover
 {
 	cursor: pointer;
-	background-color: #151515;
 	color: rgb(255, 211, 129);
 	/*background-image: url('../img/clothDark.jpg');*/
 }
@@ -110,18 +141,13 @@ body
 {
 	float:right
 }
-.inner
-{
-	width:100%;
-	height:auto;
-}
 
 .fullBox {
 	max-width: 800px;
 	width: 100vw;
 	border: 2px solid black;
 	box-shadow: 0px 5px 16px black;
-	border-radius: 12px;
+	border-radius: 1vw;
 	min-height: 300px;
 	background-image: url('../img/cloth.jpg');
 	margin-left: auto;
@@ -171,10 +197,13 @@ body
 		font-family: 'bree';
 		padding: 2.25vw;
 		background-color: black;
+		position:relative;
+		right: -3px;
+		top: -3px;
 		color: wheat;
 		cursor: pointer;
 		font-size: 4.4vw;
-		border-bottom-left-radius: 10px;
+		border-bottom-left-radius: 4vw;
 	}
 	.contactForm{
 		width: 80%;
@@ -194,7 +223,7 @@ body
 		max-width: 100vw;
 		width: 100vw;
 		height: 100%;
-		border: 2px solid black;
+		border: 5px solid black;
 		box-shadow: 0px 5px 16px black;
 		border-radius: 0px;
 		min-height: 300px;
@@ -231,6 +260,53 @@ body
 		width:100%;
 		height:auto;
 		display:inline-block;
+	}
+
+	.inner{
+		margin: 36px;
+		border: 2px dashed black;
+		background-color: #ffa6002e;
+		border-radius: 4vw;
+		height: max-content;
+		padding: 6vw;
+	}
+	.linkHead
+	{
+		font-family: 'bree';
+		font-size: 48px;
+		border-bottom: 8px solid black;
+	}
+	
+	.linkHead:hover
+	{
+	
+	}
+	
+	.link
+	{
+		font-family: 'bree';
+		font-size: 40px;
+		padding: 12px 52px 20px 52px;
+		text-align: center;
+		background-color: black;
+		border-radius: 50px;
+		margin: 1vw;
+		margin-bottom: 1vw;
+		min-width: 30vw;
+		text-decoration: none;
+		color: wheat;
+	}
+	
+	.link:hover
+	{
+		cursor: pointer;
+		color: rgb(255, 211, 129);
+		/*background-image: url('../img/clothDark.jpg');*/
+	}
+
+	.linkSpace 
+	{
+		margin-top: 48px;
 	}
 }
 
