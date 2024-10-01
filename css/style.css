@@ -9,6 +9,10 @@ body
 	padding:0px;
 	background-image: url('../img/clothDark.jpg');
 }
+#defaultPage{
+	display: table;
+    width: 100%;
+}
 .mail
 {
 	float: right;
@@ -72,7 +76,7 @@ body
 	margin: 12px;
 	border: 2px dashed black;
 	border-radius: 1vw;
-	height: max-content;
+	height: fit-content;
 	padding: 1.2vw;
 	padding-bottom: 2.4vw;
 }
@@ -99,6 +103,12 @@ body
 .leftUp{
 	margin-left: 24px;
     margin-top: 24px;
+}
+.leftSide{
+	margin-left: 24px;
+}
+.rightSide{
+	margin-right: 24px;
 }
 .midUp{
     margin-top: 24px;
@@ -144,7 +154,7 @@ body
     text-align: center;
     background-color: black;
     border-radius: 20px;
-    margin: 1vw;
+    margin: auto;
     margin-bottom: 1vw;
     min-width: 30vw;
     text-decoration: none;
@@ -165,7 +175,7 @@ body
 }
 .cont
 {
-	height: 200px;
+	height: fit-content;
     display: flex;
 
 }
@@ -342,7 +352,7 @@ body
 	.inner{
 		margin: 36px;
 		margin-bottom:0;
-		border: 2px dashed black;
+		border: 5px dashed black;
 		border-radius: 4vw;
 		height: max-content;
 		padding: 6vw;
@@ -356,6 +366,12 @@ body
 	.leftUp{
 		margin-left: auto;
 		margin-top: 0px;
+	}
+	.leftSide{
+		margin-left: auto;
+	}
+	.rightSide{
+		margin-right: auto;
 	}
 	.midUp{
 		margin-top: 0px;
