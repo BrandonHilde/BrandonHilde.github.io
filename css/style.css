@@ -279,7 +279,7 @@ body
 	.fullBox {
 		max-width: 100vw;
 		width: 100vw;
-		height: fit-content;
+		height: auto;
 		border: 5px solid black;
 		box-shadow: 0px 5px 16px black;
 		border-radius: 0px;
