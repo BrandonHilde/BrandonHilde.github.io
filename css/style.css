@@ -55,8 +55,8 @@ body
     width: 120px;
     margin: 10px;
     border: 2px solid wheat;/*#f5ab6e;*/
-    background-size: contain;
-    background-image: url('../img/profile.jpg');
+    background-size: cover;
+    background-image: url('../img/profile1.png');
     background-repeat: no-repeat;
     border-radius: 10px;
 }
