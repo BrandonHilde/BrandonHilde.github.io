@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FloorPlan Studio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="topbar">
+  <div class="logo">
+    <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 2 1 11h3v10h6v-6h4v6h6V11h3z" fill="#3e8aff"/></svg>
+    <span>FloorPlan Studio</span>
+  </div>
+  <div class="tb">
+    <button data-cmd="new" title="New project (Ctrl+N)">New</button>
+    <button data-cmd="open" title="Open a .fplan project (Ctrl+O)">Open</button>
+    <button data-cmd="save" title="Save / download project (Ctrl+S)">Save</button>
+    <span class="sep"></span>
+    <button data-cmd="undo" title="Undo (Ctrl+Z)">Undo</button>
+    <button data-cmd="redo" title="Redo (Ctrl+Y)">Redo</button>
+    <span class="sep"></span>
+    <button data-cmd="sheet" class="primary" title="Export a printable 17x11 plan sheet with title block (PNG + SVG) (Ctrl+E)">Plan Sheet</button>
+    <button data-cmd="obj" title="Export the 3D model as OBJ">3D Model</button>
+    <span class="sep"></span>
+    <button data-cmd="shot" title="Clean screenshot of the current view (F9)">Screenshot</button>
+    <button data-cmd="all" title="Capture the plan plus all standard 3D views (Ctrl+F9)">All Angles</button>
+    <span class="sep"></span>
+    <button data-cmd="sample" title="Load the sample house">Sample</button>
+    <button data-cmd="help" title="Keyboard shortcuts (F1)">Help</button>
+  </div>
+  <div class="spacer"></div>
+  <span class="hintkey">Tab</span>
+  <div class="seg" id="modeSeg">
+    <button data-mode="plan" class="on">2D Plan</button>
+    <button data-mode="3d">3D View</button>
+  </div>
+</header>
+
+<div id="main">
+  <nav id="leftbar"></nav>
+  <div id="viewport">
+    <canvas id="plan"></canvas>
+    <canvas id="gl"></canvas>
+    <canvas id="overlay"></canvas>
+    <div id="welcome" class="card hidden">
+      <h2>Welcome to FloorPlan Studio</h2>
+      <p>Draw walls in 2D, then press <b>Tab</b> to check your design in 3D from any angle and restyle every wall.
+         Export a printable plan sheet when you are done.</p>
+      <button class="primary wide" data-cmd="startwalls">Start Drawing Walls (W)</button>
+      <div class="row2">
+        <button data-cmd="sample">Open Sample House</button>
+        <button data-cmd="open">Open Project…</button>
+      </div>
+      <button class="ghost wide" data-cmd="help">Keyboard Shortcuts (F1)</button>
+    </div>
+    <div id="toasts"></div>
+  </div>
+  <aside id="panel"></aside>
+</div>
+
+<footer id="status"><span id="hint"></span><span id="coords"></span></footer>
+<div id="modal" class="hidden"><div class="modal-box" id="modalBox"></div></div>
+<input type="file" id="fileInput" accept=".fplan,.json" hidden>
+
+<script src="js/units.js"></script>
+<script src="js/geom.js"></script>
+<script src="js/model.js"></script>
+<script src="js/derive.js"></script>
+<script src="js/textures.js"></script>
+<script src="js/canvas.js"></script>
+<script src="js/plandraw.js"></script>
+<script src="js/view3d.js"></script>
+<script src="js/app.js"></script>
+<script src="js/editor.js"></script>
+<script src="js/panels.js"></script>
+<script src="js/io.js"></script>
+<script src="js/sample.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
